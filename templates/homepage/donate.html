@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <!-- Donate-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <h2 class="text-white mb-5">ASPEN HOUSE: A Home For Victims</h2>
+                        <p class="text-white">Aspen house provides a home-like residence that offers a safe and nurturing environment to empower victims of human trafficking on a path to self-sufficiency.</p>
+                        <br>
+                        <p class="text-white">Click the button below to help Aspen House provide free shelter, care and trauma healing.</p>
+                        <a class ="btn btn-primary" href="https://aspenhouseslc.org/donate/" target="_blank">Donate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <img src="{% static 'assets/img/safehouse.png' %}" alt="Safe House">
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Aspen House will provide free shelter, care and trauma healing for over 2 years</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <img src="{% static 'assets/img/meaningfulemp.png' %}" alt="Meaningful Employment">
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">A social enterprise teaches residents valuable skills and encourages self-sufficiency</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <img src="{% static 'assets/img/lifesupport.png' %}" alt="Lifelong Support">
+                             
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Surrounded by a sisterhood of love and support that lasts a lifetime</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}
+

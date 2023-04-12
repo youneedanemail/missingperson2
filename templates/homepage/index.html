@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Human Trafficking</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">The hidden world of Utah commerce.</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Be Informed-->
+<section class ="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Be Informed</h2>
+                <p class="text-white-50">
+                    Human trafficking is a global issue; there are currently 156,330 active human trafficking cases worldwide (ctdatacollaborative.org). Utah has been marked as a hotspot for human trafficking in the US, by the National Trafficking hotline. As of 2019, there were 251 Utah victims of human trafficking. It is also important to remember that many cases may go unresolved or even unheard of. Unfortunately, the pandemic has spiked human trafficking rates by 40%. 
+                    <br>
+                    <br>
+                    Human trafficking is very present in our lives; by becoming informed and aware, we have the ability to slow these rising rates of abuse. 
+                    <br>
+                    <br>
+                    <img src="{% static 'assets/img/victimpct.png' %}" alt="Graphic displaying percentage of Adult and Child Victims">
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Indicators-->
+<section class="projects-section bg-dark" id="projects">
+    
+    <div class="container px-4 px-lg-5">
+
+        <div class="row gx-0 mb-5mb-lg-0 justify-content-center">
+            <h2 class="text-white mb-4" style="text-align: center;">Indicators</h2>
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'assets/img/traffickertactics.png' %}" alt="Tactics of Human Traffickers" /></div>
+            <div class="col-lg-6">
+                <div class="bg-info text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class=" w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">What to Look For</h4>
+                            <p class="mb-0 me-5 ms-5 text-white-50">Traffickers use force, fraud, or coercion to force vulnerable victims into labor or commercial sexual exploitation. The graphic to the left displays some common tactics they are known to use:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'assets/img/victimsigns.png' %}" alt="These are signs someone may be a victim of human trafficking" /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Indicators of Human Trafficking</h4>
+                            <p class="mb-0 me-5 ms-5 text-white-50">Recognizing key indicators of human trafficking can save a life. Any suspicions should be investigated by law enforcement only. The indicators included in the graphic to the left are not all-inclusive and do not necessarily constitute proof of human trafficking, but can help:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+    </div>                                 
+</section>
+<!-- Donate-->
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <h2 class="text-white mb-5">ASPEN HOUSE: A Home For Victims</h2>
+                <p class="text-white">Aspen house provides a home-like residence that offers a safe and nurturing environment to empower victims of human trafficking on a path to self-sufficiency.</p>
+                <br>
+                <p class="text-white">Click the button below to help Aspen House provide free shelter, care and trauma healing.</p>
+                <a class ="btn btn-primary" href="https://aspenhouseslc.org/donate/" target="_blank">Donate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section bg-black">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <img src="{% static 'assets/img/safehouse.png' %}" alt="Safe House">
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">Aspen House will provide free shelter, care and trauma healing for over 2 years</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <img src="{% static 'assets/img/meaningfulemp.png' %}" alt="Meaningful Employment">
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">A social enterprise teaches residents valuable skills and encourages self-sufficiency</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <img src="{% static 'assets/img/lifesupport.png' %}" alt="Lifelong Support">
+                     
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">Surrounded by a sisterhood of love and support that lasts a lifetime</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

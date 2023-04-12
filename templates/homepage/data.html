@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <!--Data-->
+        <section class="about-section text-center" id="data">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-0 mb-5mb-lg-0 justify-content-center">
+                    <h2 class="text-white mb-4" style="text-align: center;">Missing Person Cases in the State of Utah</h2>
+                        <div>   
+                            <table>
+                                <tr>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> Date Missing</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> Last Name</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> First Name</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> Age at Missing</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> City</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> State</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> Gender</th>
+                                    <th class="text-info" style="border: 1px solid grey; padding: 10px;"> Race</th>
+                                </tr>
+                                {% for oPerson in data %}
+                                <tr style="border: 1px solid grey; padding: 10px, 3px, 10px, 3px;">
+                                    <td style="border: 1px solid grey;"> {{oPerson.date_missing}}</td>
+                                    <td style="border: 1px solid grey; padding-left: 18px; padding-right: 18px;"> {{oPerson.last_name}}</td>
+                                    <td style="border: 1px solid grey;"> {{oPerson.first_name}}</td>
+                                    <td style="border: 1px solid grey;"> {{oPerson.age_at_missing}}</td>
+                                    <td style="border: 1px solid grey; padding-left: 18px; padding-right: 18px;"> {{oPerson.city}}</td>
+                                    <td style="border: 1px solid grey;"> {{oPerson.state}}</td>
+                                    <td style="border: 1px solid grey;"> {{oPerson.gender}}</td>
+                                    <td style="border: 1px solid grey;"> {{oPerson.race}}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </section>     
+
+{% endblock %}
